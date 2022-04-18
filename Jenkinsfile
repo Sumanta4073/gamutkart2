@@ -32,7 +32,7 @@ pipeline {
         stage('Deployment') {
             steps {
                 sh 'docker build -t sumanta4073/gamutkart2-img .'
-           
+                sh 'docker push sumanta4073/gamutkart2-img'
             }
         }
     }
